@@ -39,7 +39,7 @@ def meanCamberLine(m:int,p:int,t:int,jump:int=0.01):
     yc=[]
     for i in range(0,p,jump):
         yc.append(m*(2*p*i-i**2)/(p**2))
-
+    
     # From x = p to x = c
         # c+1 because the end is not inclusive
     for i in range(p,c+1,jump):
@@ -67,7 +67,7 @@ def thicknessDistribution(t:int,jump:int = 0.01):
 
     return tuple(yt)
     
-def thetaValues(jump:int = 0.01):
+def thetaValues(m:int,p:int,jump:int = 0.01):
     '''
     Function to get the angle in each point of the camber line
 
@@ -76,18 +76,30 @@ def thetaValues(jump:int = 0.01):
     :return: A tuple with the values of theta from 0 to 1 in x
     :rtype: tuple
     '''
-
+    c = 1
+    m=c*(m/100)
+    p=c*(p/10)
     # Theta = arctan(d(yc)/dx)
     # yc has a function from x = 0 to x = p
     theta = []
     for x in range(0,p,jump):
+        # Derivative
         dyc = 2*m*(p-x)/p**2
         theta.append(math.atan(dyc))
         
     # yc has a function from x = p to x = c and c = 1
     for x in range(p,c,jump):
+        # Derivative
         dyc = 2*m*(p-x)/(1-p)**2
         theta.append(math.atan(dyc))
     
     return tuple(theta)
 
+def upperSurface():
+    '''
+    Function that returns the upper surface of the selected airfoil
+    '''
+    
+
+if __name__ == '__main__':
+    main()
