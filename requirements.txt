@@ -1,2 +1,5 @@
 matplotlib
 argparse
+os
+math
+csv
