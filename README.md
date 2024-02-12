@@ -1,5 +1,5 @@
 # AirfoilNACA
-## Video Demo:  <URL HERE>
+## Video Demo:  <https://youtu.be/dFace2cEPDQ>
 #### Name: José de Jesús Hernández Ibarra
 #### Github: codejogy
 #### Edx: codejogy
@@ -120,7 +120,9 @@ and the CSV file with values as
 
 If you want to get more samples of the CSV, you can use the -s argument
 
-`python project.py 2412 -s 500`
+```
+$ python project.py 2412 -s 500
+```
 
 Now you get more than 500 divisions instead of the 100 the program uses by default.
 
@@ -143,3 +145,5 @@ https://aerospaceweb.org/question/airfoils/q0041.shtml
 https://www.makeareadme.com/
 
 https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/
+
+https://www.youtube.com/watch?v=6pt8Uolfj0M

@@ -1,4 +1,10 @@
 '''
+Airfoil NACA
+Name: Jose de Jesus Hernandez Ibarra
+Github: codejogy
+Edx: codejogy
+Mexico, Irapuato Guanajuato
+12/02/24
 BASED ON THIS ARTICLE
 https://aerospaceweb.org/question/airfoils/q0041.shtml
 '''
@@ -237,7 +243,7 @@ def getImage(upperSurface:tuple[int,int],lowerSurface:tuple[int,int],xTuple:tupl
     plt.plot(lowerSurface[0],lowerSurface[1])
     plt.axis('equal')
     plt.grid(True,linestyle='--')
-    plt.savefig(os.path.join(path,'test.png'))
+    plt.savefig(os.path.join(path,'NACA.png'))
     return True
 
 def getCSV(upperSurface:tuple[int,int],lowerSurface:tuple[int,int],path:str) -> None:
