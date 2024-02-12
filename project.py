@@ -240,7 +240,7 @@ def getImage(upperSurface:tuple[int,int],lowerSurface:tuple[int,int],xTuple:tupl
     plt.savefig(os.path.join(path,'test.png'))
     return True
 
-def getCSV(upperSurface:tuple[int,int],lowerSurface:tuple[int,int],path:str) -> bool:
+def getCSV(upperSurface:tuple[int,int],lowerSurface:tuple[int,int],path:str) -> None:
     '''
     Function that returns a CSV in NACA####/NACA.csv+
     Replaces the CSV if there's already one
